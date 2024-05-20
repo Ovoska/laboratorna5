@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>laba5</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        .calculator {
+            width: 300px;
+            background-color: #333;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .display {
+            background-color: #444;
+            color: white;
+            font-size: 2.5rem;
+            text-align: right;
+            padding: 20px;
+            box-sizing: border-box;
+            border-bottom: 1px solid #555;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(5, 60px);
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #666;
+            border: 1px solid #555;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .btn.operator {
+            background-color: #ff9500;
+        }
+
+        .btn.zero {
+            grid-column: span 2;
+        }
+
+        .btn:active {
+            background-color: #888;
+        }
+
+        .btn.operator:active {
+            background-color: #ffa500;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">0</div>
+        <div class="buttons">
+            <div class="btn">AC</div>
+            <div class="btn">+/-</div>
+            <div class="btn">%</div>
+            <div class="btn operator">÷</div>
+            <div class="btn">7</div>
+            <div class="btn">8</div>
+            <div class="btn">9</div>
+            <div class="btn operator">×</div>
+            <div class="btn">4</div>
+            <div class="btn">5</div>
+            <div class="btn">6</div>
+            <div class="btn operator">−</div>
+            <div class="btn">1</div>
+            <div class="btn">2</div>
+            <div class="btn">3</div>
+            <div class="btn operator">+</div>
+            <div class="btn zero">0</div>
+            <div class="btn">,</div>
+            <div class="btn operator">=</div>
+        </div>
+    </div>
+</body>
+</html>
